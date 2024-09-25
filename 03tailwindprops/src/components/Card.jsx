@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({ channel, price = 0.05 }) {
+function Card({ channel, price = 0.05, sno = 0 }) {
 
     return (
         <div className="w-96 flex flex-col rounded-xl bg-black min-h-[19rem] ">
@@ -17,7 +17,7 @@ function Card({ channel, price = 0.05 }) {
                     <h1>Price</h1>
                 </div>
                 <div className="flex justify-between">
-                    <p>#345</p>
+                    <p>#{sno}</p>
                     <p>${price}</p>
                 </div>
             </div>
